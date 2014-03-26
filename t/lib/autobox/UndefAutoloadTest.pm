@@ -8,13 +8,11 @@ my $class = "autobox::UndefAutoload";
 
 use autobox::UndefAutoload;
 
-before setup => sub { use_ok($class); };
-
-test 'returns undef' => sub {
+test 'call arbitrary method' => sub {
     is undef->foo, undef;
 };
 
-test 'returns undef chained' => sub {
+test 'call chained method' => sub {
     is undef->foo->bar, undef;
 };
 
