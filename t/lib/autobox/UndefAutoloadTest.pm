@@ -4,8 +4,6 @@ use Test::Roo;
 
 use lib 'lib', 't/lib';
 
-my $class = "autobox::UndefAutoload";
-
 use autobox::UndefAutoload;
 
 test 'call arbitrary method' => sub {
